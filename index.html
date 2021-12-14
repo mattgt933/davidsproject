@@ -14,17 +14,21 @@ body {
  right:0px;
 }
 
+#title {
+font-size: 20px;
+}
+
 .navbar {
   overflow: hidden;
-  background-color: #EBEBEB;
+  background-color: #222;
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
-  color: #A48445;
+  color: #cab281;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
@@ -126,7 +130,7 @@ position: absolute;
 
 <div id="home">
  <div class="navbar">
-   <a href="#footer">David's Project Tracker</a>
+   <a href="#" onclick="reload()" id="title">David's Project Tracker</a>
  </div>
 </div>
   
@@ -137,6 +141,12 @@ position: absolute;
   <div class="timelineC one"><p class="text">33%</p></div>
   <div class="timelineC two"><p class="text">67%</p></div>
   <div class="timelineC three"><p class="text">100%</p></div>
+  
+  <div id="photos">
+    <img src="#" id="updateOne">
+    <img src="#" id="updateTwo">
+    <img src="#" id="updateThree">
+  </div>
   
   <div id="specs">
   <h1 id="info">Project Offer:</h1>
@@ -153,3 +163,5 @@ position: absolute;
 
 </body>
 </html>
+
+
