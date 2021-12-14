@@ -26,7 +26,6 @@ font-size: 20px;
  left:0px;
  right:0px;
   z-index: 5;
-  transition: 0.4s;
 }
 
 .navbar a {
@@ -37,6 +36,7 @@ font-size: 20px;
   padding: 16px 16px;
   text-decoration: none;
   z-index: 6;
+  transition: 0.4s;
 }
 
 /* Time Line */
@@ -173,10 +173,10 @@ position: absolute;
 
 function scrollFunction() {
   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    document.getElementById("navID").style.padding = "12px 12px";
+    document.getElementById("navID a").style.padding = "12px 12px";
     document.getElementById("title").style.fontSize = "14px";
   } else {
-    document.getElementById("navID").style.padding = "16px 16px";
+    document.getElementById("navID a").style.padding = "16px 16px";
     document.getElementById("title").style.fontSize = "20px";
   }
 } 
