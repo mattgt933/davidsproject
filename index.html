@@ -132,7 +132,7 @@ position: absolute;
 }
 </style>
 </head>
-<body>
+<bod>
 
 <div id="home">
  <div class="navbar">
@@ -165,7 +165,21 @@ position: absolute;
     <div id="footer">
     <h1 id="more"><a href="#navbar">More Offers</a></h1>
     </div>
-</div>  
+</div> 
+  
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.padding = "12px 12px";
+    document.getElementById("title").style.fontSize = "14px";
+  } else {
+    document.getElementById("navbar").style.padding = "16px 16px";
+    document.getElementById("title").style.fontSize = "20px";
+  }
+} 
+</script>  
 
 </body>
 </html>
