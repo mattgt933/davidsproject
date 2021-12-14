@@ -135,7 +135,7 @@ position: absolute;
 <bod>
 
 <div id="home">
- <div class="navbar">
+ <div class="navbar" id="navID">
    <a href="#" onclick="reload()" id="title">David's Project Tracker</a>
  </div>
 </div>
@@ -172,10 +172,10 @@ position: absolute;
 
 function scrollFunction() {
   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    document.getElementByClassName("navbar").style.padding = "12px 12px";
+    document.getElementById("navID").style.padding = "12px 12px";
     document.getElementById("title").style.fontSize = "14px";
   } else {
-    document.getElementByClassName("navbar").style.padding = "16px 16px";
+    document.getElementById("navID").style.padding = "16px 16px";
     document.getElementById("title").style.fontSize = "20px";
   }
 } 
