@@ -186,7 +186,7 @@ position: absolute;
   <h1>36-44 Inch diffuser holder</h1>
   <p class="price">$21.00</p>
   <p>This item would hold a diffuser and light<br> at the right distance apart to get soft light. It would also mount to a tripod or other stand.</p>
-  <p><button>Choose This Project</button></p>
+  <p><button onclick="getIt()">Choose This Project</button></p>
 </div>
     
     <div id="footer">
@@ -206,6 +206,16 @@ function scrollFunction() {
     document.getElementById("title").style.fontSize = "20px";
   }
 } 
+
+
+var fs = require('fs');
+
+function getIt() {
+//create a file named mynewfile3.txt:
+fs.writeFile('mynewfile3.txt', 'I choose the diffuser.', function (err) {
+  if (err) throw err;
+});
+}
 </script>  
 
 </body>
